@@ -1,9 +1,3 @@
-// Sesjonsklokke i headeren — 'sv-SE' gir ISO-format ut av boksen (2026-08-20 14:32:07).
-const clock = document.getElementById("clock");
-const tick = () => (clock.textContent = new Date().toLocaleString("sv-SE"));
-tick();
-setInterval(tick, 1000);
-
 // Filtrering av loggen.
 const buttons = document.querySelectorAll(".filter");
 const entries = document.querySelectorAll(".entry");

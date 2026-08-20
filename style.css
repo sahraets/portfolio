@@ -1,8 +1,8 @@
 :root {
   --paper: #eef2f3;
   --card: #fafbfb;
-  --ink: #16272f;
-  --muted: #526670;
+  --ink: #4a1622;
+  --muted: #7d5760;
   --line: #ccd6da;
   --accent: #2e6a6d;
   --amber: #96590b;
@@ -60,7 +60,6 @@ html { scroll-behavior: smooth; }
   border-bottom: 1px solid var(--line);
   overflow-x: auto;
 }
-.rail__mark { display: none; }
 .rail ul { display: flex; gap: 0.25rem; padding: 0.6rem 1.25rem; }
 .rail a {
   display: block;
@@ -90,12 +89,6 @@ html { scroll-behavior: smooth; }
     border-bottom: 0;
     border-right: 1px solid var(--line);
     overflow: visible;
-  }
-  .rail__mark {
-    display: block;
-    font-size: 0.8rem;
-    letter-spacing: 0.24em;
-    color: var(--ink);
   }
   .rail ul { flex-direction: column; gap: 0.1rem; margin: auto 0; padding: 0; }
   .rail a {
@@ -145,10 +138,9 @@ html { scroll-behavior: smooth; }
   align-items: end;
 }
 
-.portrait { margin: 0; width: 11rem; }
-.portrait img {
+.portrait {
   display: block;
-  width: 100%;
+  width: 11rem;
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -157,41 +149,17 @@ html { scroll-behavior: smooth; }
   padding: 0.4rem;
   filter: saturate(0.92);
 }
-.portrait figcaption {
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  padding-top: 0.6rem;
-}
 
 @media (min-width: 46rem) {
   .record__top { grid-template-columns: minmax(0, 1fr) auto; gap: 2.5rem; }
   .portrait { width: 12.5rem; }
 }
 
-.meta {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 1px;
-  margin: 2.5rem 0 0;
-  background: var(--line);
-  border: 1px solid var(--line);
-}
-.meta > div { background: var(--paper); padding: 0.85rem 1rem; }
-.meta dt {
-  font: 400 0.7rem/1 var(--mono);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.meta dd { margin: 0.45rem 0 0; font-size: 0.95rem; }
-
 .intro {
   max-width: 46ch;
   margin-top: 2.5rem;
   font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
-  color: #22333c;
+  color: #552430;
 }
 
 /* ---------- seksjoner ---------- */
@@ -260,7 +228,7 @@ section { padding: clamp(3rem, 7vw, 4.5rem) 0; border-bottom: 1px solid var(--li
   color: var(--muted);
   padding-top: 0.3rem;
 }
-.entry__body p { color: #33454e; padding-top: 0.6rem; max-width: 62ch; }
+.entry__body p { color: #63313d; padding-top: 0.6rem; max-width: 62ch; }
 
 .badge {
   display: inline-block;
@@ -315,7 +283,7 @@ section { padding: clamp(3rem, 7vw, 4.5rem) 0; border-bottom: 1px solid var(--li
 }
 .exhibit h3 { font-size: 1.15rem; padding-top: 0.75rem; }
 .exhibit__org { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding-top: 0.3rem; }
-.exhibit > p:nth-of-type(3) { padding-top: 0.75rem; color: #33454e; font-size: 0.95rem; }
+.exhibit > p:nth-of-type(3) { padding-top: 0.75rem; color: #63313d; font-size: 0.95rem; }
 .exhibit__repo {
   font-size: 0.72rem;
   letter-spacing: 0.04em;
@@ -353,6 +321,14 @@ section { padding: clamp(3rem, 7vw, 4.5rem) 0; border-bottom: 1px solid var(--li
 .skills dd { margin: 0; }
 .skills .tags { padding-top: 0.75rem; }
 
+/* ---------- utenom ---------- */
+
+.utenom__note {
+  max-width: 46ch;
+  margin-bottom: 1.75rem;
+  color: #63313d;
+}
+
 /* ---------- kontakt ---------- */
 
 footer {
@@ -376,7 +352,7 @@ footer {
   text-transform: uppercase;
   color: var(--muted);
 }
-.contact a { font-size: 1.05rem; }
+.contact a { font-size: 1.05rem; overflow-wrap: anywhere; }
 .colofon { font-size: 0.72rem; letter-spacing: 0.08em; color: var(--muted); padding-top: 2.5rem; }
 
 [hidden] { display: none !important; }
