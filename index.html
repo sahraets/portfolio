@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sahra Stave — utvikler i Bergen</title>
+<meta name="description" content="Sahra Stave — utvikler i Bergen. Fullstack .NET og Azure, med bakgrunn fra sykepleie og anti-hvitvasking. Portefølje ført som logg.">
+<meta name="theme-color" content="#16272f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Zilla+Slab:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#innhold">Hopp til innhold</a>
+
+<nav class="rail" aria-label="Seksjoner">
+  <p class="rail__mark mono">S&#183;S</p>
+  <ul>
+    <li><a href="#topp"><span class="rail__no mono" aria-hidden="true">00</span>Start</a></li>
+    <li><a href="#om"><span class="rail__no mono" aria-hidden="true">01</span>Om</a></li>
+    <li><a href="#erfaring"><span class="rail__no mono" aria-hidden="true">02</span>Erfaring</a></li>
+    <li><a href="#prosjekter"><span class="rail__no mono" aria-hidden="true">03</span>Prosjekter</a></li>
+    <li><a href="#kontakt"><span class="rail__no mono" aria-hidden="true">04</span>Kontakt</a></li>
+  </ul>
+</nav>
+
+<header class="record" id="topp" data-spy>
+  <p class="stamp">Journal · Sahra Stave</p>
+  <div class="record__top">
+    <div>
+      <h1>Sahra Stave</h1>
+      <p class="record__role">Utvikler — Bergen</p>
+    </div>
+    <figure class="portrait">
+      <img src="img/sahra.jpg" alt="Portrett av Sahra Stave" width="640" height="800" decoding="async">
+      <figcaption class="mono">Foto&#183;01</figcaption>
+    </figure>
+  </div>
+
+  <dl class="meta">
+    <div><dt>Base</dt><dd>Bergen, NO</dd></div>
+    <div><dt>Felt</dt><dd>Fullstack · .NET · Azure</dd></div>
+    <div><dt>Status</dt><dd><span class="badge">AVAILABLE</span></dd></div>
+    <div><dt>Sesjon</dt><dd><time id="clock" class="mono">—</time></dd></div>
+  </dl>
+
+  <p class="intro" id="om" data-spy>
+   Utvikler med bachelor i informatikk, matematikk og økonomi fra Universitetet i Bergen.
+   Tidligere sykepleier, og kunderådgiver innen anti-hvitvasking hos DNB.
+  </p>
+</header>
+
+<main id="innhold">
+
+  <section id="erfaring" data-spy aria-labelledby="logg-tittel">
+    <div class="sec-head">
+      <h2 id="logg-tittel"><span class="sec-no" aria-hidden="true">§ 01</span> Logg</h2>
+      <p class="sec-note mono" id="log-count" aria-live="polite">5 oppføringer</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filtrer loggen">
+      <button type="button" class="filter" data-filter="alle" aria-pressed="true">Alle</button>
+      <button type="button" class="filter" data-filter="utvikling" aria-pressed="false">Utvikling</button>
+      <button type="button" class="filter" data-filter="finans" aria-pressed="false">Finans</button>
+      <button type="button" class="filter" data-filter="helse" aria-pressed="false">Helse</button>
+      <button type="button" class="filter" data-filter="utdanning" aria-pressed="false">Utdanning</button>
+    </div>
+
+    <ol class="log">
+      <li class="entry" data-cat="utvikling">
+        <p class="entry__time mono"><time datetime="2026-06">2026.06</time>–<time datetime="2026-08">2026.08</time></p>
+        <div class="entry__body">
+          <h3>Fullstack-utvikler <span class="entry__org">Stø AS · KYC Data · 8 ukers sommerinternship</span></h3>
+          <p>I team med to andre studenter bygget vi en intern backoffice-løsning for KYC/AML fra bunnen av,
+            og fulgte den hele veien til produksjon: datamodell og databasehåndtering, API-integrasjoner,
+            webhooks, mikrotjenester, sikker pålogging med EntraID, containerisering og deploy til tre miljøer
+            (test, dev og prod) i Azure Kubernetes Service.</p>
+          <p>Kjernefunksjonalitet var søk og oppslag mot KYC/PEP-data og selvbetjent compliance-overvåkning
+            for kundene. Alt arbeid gikk etter teamets etablerte rutiner —
+            versjonskontroll, code review og faste deploy-prosesser.</p>
+          <ul class="tags mono">
+            <li>C#/.NET</li><li>Blazor WASM</li><li>REST-API</li><li>Webhooks</li><li>Mikrotjenester</li><li>EntraID</li><li>Docker</li><li>Kubernetes</li><li>Azure AKS</li><li>Bicep</li><li>Git</li>
+          </ul>
+        </div>
+        <p class="entry__status"><span class="badge">DEPLOYED</span></p>
+      </li>
+
+      <li class="entry" data-cat="utdanning">
+        <p class="entry__time mono"><time datetime="2023-08">2023.08</time>–<time datetime="2026-06">2026.06</time></p>
+        <div class="entry__body">
+          <h3>Bachelor i informatikk, matematikk og økonomi <span class="entry__org">Universitetet i Bergen</span></h3>
+          <p>Algoritmer, databaser, systemutvikling og statistikk — med fordypning i statistikk og maskinlæring.</p>
+        </div>
+        <p class="entry__status"><span class="badge">COMPLETED</span></p>
+      </li>
+
+      <li class="entry" data-cat="helse">
+        <p class="entry__time mono"><time datetime="2022-09">2022.09</time>–<time datetime="2026-04">2026.04</time></p>
+        <div class="entry__body">
+          <h3>Sykepleier, 20 % helgestilling <span class="entry__org">Bergen kommune · Ulrikstunet Omsorgsbolig</span></h3>
+          <p> Ved siden av fulltidsstudier gjennom hele bachelorløpet.</p>
+        </div>
+        <p class="entry__status"><span class="badge">COMPLETED</span></p>
+      </li>
+
+      <li class="entry" data-cat="finans">
+        <p class="entry__time mono"><time datetime="2022-02">2022.02</time>–<time datetime="2023-03">2023.03</time></p>
+        <div class="entry__body">
+          <h3>Kunderådgiver anti-hvitvasking <span class="entry__org">DNB · via Manpower</span></h3>
+          <p>Del av internt AML-prosjekt for relegitimering av kundebasen: kundekontroll, dokumentasjon og saksbehandling.</p>
+        </div>
+        <p class="entry__status"><span class="badge">VERIFIED</span></p>
+      </li>
+
+      <li class="entry" data-cat="utdanning">
+        <p class="entry__time mono"><time datetime="2018-08">2018.08</time>–<time datetime="2021-06">2021.06</time></p>
+        <div class="entry__body">
+          <h3>Bachelor i sykepleie <span class="entry__org">VID vitenskapelige høgskole</span></h3>
+        </div>
+        <p class="entry__status"><span class="badge">COMPLETED</span></p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="prosjekter" data-spy aria-labelledby="prosj-tittel">
+    <div class="sec-head">
+      <h2 id="prosj-tittel"><span class="sec-no" aria-hidden="true">§ 02</span> Prosjekter</h2>
+      <p class="sec-note mono">5 vedlegg</p>
+    </div>
+
+    <ul class="exhibits">
+      <li class="exhibit">
+        <p class="exhibit__id mono">EX-01</p>
+        <h3>KYC/AML Backoffice-plattform</h3>
+        <p class="exhibit__org mono">Stø AS · team på tre</p>
+        <p>Fullstack-applikasjon for KYC/PEP-søk og selvbetjent compliance-overvåkning, bygget på API-integrasjoner, webhooks og mikrotjenester. Infrastrukturen ble provisjonert med Bicep (IaC) og deployet til test-, dev- og prod-miljø i AKS.</p>
+        <ul class="tags mono"><li>.NET</li><li>Blazor WASM</li><li>EntraID</li><li>Docker</li><li>AKS</li><li>Bicep</li></ul>
+        <p class="exhibit__repo mono">Intern kildekode — ikke offentlig</p>
+      </li>
+      <li class="exhibit">
+        <p class="exhibit__id mono">EX-02</p>
+        <h3><a href="https://github.com/sahraets/bysykkel-predict">Bysykkel-prediksjonsmodell</a></h3>
+        <p class="exhibit__org mono">Maskinlæring</p>
+        <p>Modell som estimerer antall ledige bysykler én time frem i tid, basert på historiske data. Hovedarbeidet lå i feature engineering på tid, vær og stasjonsmønstre.</p>
+        <ul class="tags mono"><li>Python</li><li>pandas</li><li>scikit-learn</li></ul>
+        <p class="exhibit__repo mono">github.com/sahraets/bysykkel-predict <span aria-hidden="true">&#8599;</span></p>
+      </li>
+      <li class="exhibit">
+        <p class="exhibit__id mono">EX-03</p>
+        <h3><a href="https://github.com/sahraets/cycle-tracker">Cycle Tracker</a></h3>
+        <p class="exhibit__org mono">Personlig prosjekt</p>
+        <p>Flask-app for coverline-basert eggløsningsdeteksjon, bygget på mine egne BBT-målinger over rundt fem år. Egen data, eget verktøy.</p>
+        <ul class="tags mono"><li>Python</li><li>Flask</li><li>pandas</li><li>NumPy</li></ul>
+        <p class="exhibit__repo mono">github.com/sahraets/cycle-tracker <span aria-hidden="true">&#8599;</span></p>
+      </li>
+      <li class="exhibit">
+        <p class="exhibit__id mono">EX-04 </p>
+        <h3><a href="https://github.com/sahraets/strava-art">Ruter &#8594; Kunst</a></h3>
+        <p class="exhibit__org mono">Personlig prosjekt</p>
+        <p>Webapp som gjør mine egne Strava-turer om til generativ kunst — ikke kart, men et abstrakt verk der
+          formen på traseen gir hver tur sin egen signatur. Backend i Java 25 og Spring Boot henter aktivitetene
+          via OAuth 2.0 med automatisk token-fornyelse, og dekoder Googles komprimerte polylines til
+          skjermkoordinater med breddegradskorreksjon. Frontend tegner hver rute flere ganger i et
+          kalejdoskopmønster over en akvarellbakgrunn i HTML5 Canvas, styrt av en seedet tilfeldighetsgenerator
+          slik at samme tur alltid gir samme verk. Neste steg er historisk værdata fra Open-Meteo, så forholdene
+          på turdagen får påvirke fargepaletten.</p>
+        <ul class="tags mono"><li>Java 25</li><li>Spring Boot</li><li>RestClient</li><li>OAuth 2.0</li><li>HTML5 Canvas</li><li>JavaScript</li><li>Open-Meteo</li></ul>
+        <p class="exhibit__repo mono">github.com/sahraets/strava-art <span aria-hidden="true">&#8599;</span></p>
+      </li>
+      <li class="exhibit">
+        <p class="exhibit__id mono">EX-05 </p>
+        <h3><a href="https://github.com/sahraets/apartment">Leilighetsplanlegger</a></h3>
+        <p class="exhibit__org mono">Personlig prosjekt · pixel-art</p>
+        <p>Et 2D-spill som verktøy: samboeren min og jeg planlegger innkjøp til ny leilighet ved å styre en
+          pixel-art-figur rundt i plantegningen. Hvert rom er en sone, og går du inn i den, åpnes et panel med
+          ønskeliste, status per ting (ønsket / bestilt / kjøpt), bilder og budsjett mot faktisk forbruk.
+          Arkitekturen er lagdelt, med et repository-lag som eneste sted databasen berøres — spillmotoren vet
+          ingenting om Supabase, så data kan mockes under utvikling og kilden byttes senere. Tilgang er
+          ett delt passord, nok til å holde tilfeldige besøkende ute.</p>
+        <ul class="tags mono"><li>Phaser</li><li>React</li><li>Supabase</li><li>PostgreSQL</li><li>Vercel</li></ul>
+        <p class="exhibit__repo mono">
+          github.com/sahraets/apartment <span aria-hidden="true">&#8599;</span>
+          <!-- TODO: bytt ut demo-URL-en under når Vercel-deployen er live. -->
+          <a class="exhibit__demo" href="https://DEMO-URL.vercel.app">Demo <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="teknisk" aria-labelledby="tek-tittel">
+    <div class="sec-head">
+      <h2 id="tek-tittel"><span class="sec-no" aria-hidden="true">§ 03</span> Teknisk</h2>
+    </div>
+
+    <dl class="skills">
+      <div>
+        <dt class="mono">Språk</dt>
+        <dd><ul class="tags mono"><li>C#</li><li>Python</li><li>Java</li><li>JavaScript</li></ul></dd>
+      </div>
+      <div>
+        <dt class="mono">Rammeverk</dt>
+        <dd><ul class="tags mono"><li>.NET</li><li>ASP.NET Core</li><li>EF Core</li><li>Blazor WASM</li><li>Spring Boot</li><li>pandas</li><li>NumPy</li></ul></dd>
+      </div>
+      <div>
+        <dt class="mono">Cloud / DevOps</dt>
+        <dd><ul class="tags mono"><li>Azure AKS</li><li>EntraID</li><li>Key Vault</li><li>Docker</li><li>Kubernetes</li><li>Bicep</li><li>Git</li></ul></dd>
+      </div>
+      <div>
+        <dt class="mono">Databaser</dt>
+        <dd><ul class="tags mono"><li>SQLite</li><li>PostgreSQL</li><li>AzureSQL</li></ul></dd>
+      </div>
+    </dl>
+  </section>
+
+</main>
+
+<footer id="kontakt" data-spy>
+  <div class="sec-head">
+    <h2><span class="sec-no" aria-hidden="true">§ 04</span> Kontakt</h2>
+  </div>
+  <!-- TODO: fyll inn e-post og LinkedIn-URL under. -->
+  <ul class="contact">
+    <li><span class="mono">E-post</span><a href="mailto:din@epost.no">din@epost.no</a></li>
+    <li><span class="mono">LinkedIn</span><a href="https://linkedin.com/in/BRUKERNAVN">linkedin.com/in/BRUKERNAVN</a></li>
+    <li><span class="mono">GitHub</span><a href="https://github.com/sahraets">github.com/sahraets</a></li>
+  </ul>
+  <p class="colofon mono">Ført i Bergen · sist oppdatert 2026-08 · håndskrevet HTML, CSS og JS</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
