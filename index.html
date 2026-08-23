@@ -6,6 +6,8 @@
 <title>Sahra Stave — utvikler i Bergen</title>
 <meta name="description" content="Sahra Stave — utvikler i Bergen. Fullstack .NET og Azure, med bakgrunn fra sykepleie og anti-hvitvasking. Portefølje ført som logg.">
 <meta name="theme-color" content="#4a1622">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Zilla+Slab:wght@500;600&display=swap" rel="stylesheet">
@@ -18,7 +20,7 @@
   <ul>
     <li><a href="#topp"><span class="rail__no mono" aria-hidden="true">00</span>Start</a></li>
     <li><a href="#om"><span class="rail__no mono" aria-hidden="true">01</span>Om</a></li>
-    <li><a href="#erfaring"><span class="rail__no mono" aria-hidden="true">02</span>Erfaring</a></li>
+    <li><a href="#erfaring"><span class="rail__no mono" aria-hidden="true">02</span>Bakgrunn</a></li>
     <li><a href="#prosjekter"><span class="rail__no mono" aria-hidden="true">03</span>Prosjekter</a></li>
     <li><a href="#utenom"><span class="rail__no mono" aria-hidden="true">04</span>Utenom</a></li>
     <li><a href="#kontakt"><span class="rail__no mono" aria-hidden="true">05</span>Kontakt</a></li>
@@ -45,11 +47,11 @@
 
   <section id="erfaring" data-spy aria-labelledby="logg-tittel">
     <div class="sec-head">
-      <h2 id="logg-tittel"><span class="sec-no" aria-hidden="true">§ 01</span> Logg</h2>
+      <h2 id="logg-tittel"><span class="sec-no" aria-hidden="true">§ 01</span> Bakgrunn</h2>
       <p class="sec-note mono" id="log-count" aria-live="polite">5 oppføringer</p>
     </div>
 
-    <div class="filters" role="group" aria-label="Filtrer loggen">
+    <div class="filters" role="group" aria-label="Filtrer bakgrunn">
       <button type="button" class="filter" data-filter="alle" aria-pressed="true">Alle</button>
       <button type="button" class="filter" data-filter="utvikling" aria-pressed="false">Utvikling</button>
       <button type="button" class="filter" data-filter="finans" aria-pressed="false">Finans</button>
@@ -73,7 +75,6 @@
             <li>C#/.NET</li><li>Blazor WASM</li><li>REST-API</li><li>Webhooks</li><li>Mikrotjenester</li><li>EntraID</li><li>Docker</li><li>Kubernetes</li><li>Azure AKS</li><li>Bicep</li><li>Git</li>
           </ul>
         </div>
-        <p class="entry__status"><span class="badge">DEPLOYED</span></p>
       </li>
 
       <li class="entry" data-cat="utdanning">
@@ -82,16 +83,18 @@
           <h3>Bachelor i informatikk, matematikk og økonomi <span class="entry__org">Universitetet i Bergen</span></h3>
           <p>Algoritmer, databaser, systemutvikling og statistikk — med fordypning i statistikk og maskinlæring.</p>
         </div>
-        <p class="entry__status"><span class="badge">COMPLETED</span></p>
       </li>
 
       <li class="entry" data-cat="helse">
         <p class="entry__time mono"><time datetime="2022-09">2022.09</time>–<time datetime="2026-04">2026.04</time></p>
         <div class="entry__body">
           <h3>Sykepleier, 20 % helgestilling <span class="entry__org">Bergen kommune · Ulrikstunet Omsorgsbolig</span></h3>
-          <p> Ved siden av fulltidsstudier gjennom hele bachelorløpet.</p>
+          <p>Fast deltidsstilling gjennom hele bachelorløpet, ved siden av fulltidsstudier.</p>
+          <p>Arbeidsplassen har fjernledelse, og ansvaret for daglig drift på stedet ligger hos
+            personalet på vakt. Det har gitt trening i å prioritere selvstendig, holde mange tråder
+            samtidig og levere under press — med de kravene til nøyaktighet og dokumentasjon som
+            helsevesenet stiller.</p>
         </div>
-        <p class="entry__status"><span class="badge">COMPLETED</span></p>
       </li>
 
       <li class="entry" data-cat="finans">
@@ -100,7 +103,6 @@
           <h3>Kunderådgiver anti-hvitvasking <span class="entry__org">DNB · via Manpower</span></h3>
           <p>Del av internt AML-prosjekt for relegitimering av kundebasen: kundekontroll, dokumentasjon og saksbehandling.</p>
         </div>
-        <p class="entry__status"><span class="badge">VERIFIED</span></p>
       </li>
 
       <li class="entry" data-cat="utdanning">
@@ -108,7 +110,6 @@
         <div class="entry__body">
           <h3>Bachelor i sykepleie <span class="entry__org">VID vitenskapelige høgskole</span></h3>
         </div>
-        <p class="entry__status"><span class="badge">COMPLETED</span></p>
       </li>
     </ol>
   </section>
@@ -145,6 +146,9 @@
         <p class="exhibit__repo mono">github.com/sahraets/cycle-tracker <span aria-hidden="true">&#8599;</span></p>
       </li>
       <li class="exhibit">
+        <img class="exhibit__shot" src="img/strava-art.jpg"
+             alt="To turer fra Ruter &#8594; Kunst, tegnet som abstrakte mønstre over myke fargeflater"
+             width="800" height="400" loading="lazy" decoding="async">
         <p class="exhibit__id mono">EX-04 </p>
         <h3><a href="https://github.com/sahraets/strava-art">Ruter &#8594; Kunst</a></h3>
         <p class="exhibit__org mono">Personlig prosjekt</p>
@@ -159,6 +163,9 @@
         <p class="exhibit__repo mono">github.com/sahraets/strava-art <span aria-hidden="true">&#8599;</span></p>
       </li>
       <li class="exhibit">
+        <img class="exhibit__shot" src="img/apartment.jpg"
+             alt="Leilighetsplanleggeren: pixel-art-plantegning til venstre, rompanel med budsjett og ønskeliste til høyre"
+             width="800" height="400" loading="lazy" decoding="async">
         <p class="exhibit__id mono">EX-05 </p>
         <h3><a href="https://github.com/sahraets/apartment">Leilighetsplanlegger</a></h3>
         <p class="exhibit__org mono">Personlig prosjekt · pixel-art</p>

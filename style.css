@@ -5,8 +5,6 @@
   --muted: #7d5760;
   --line: #ccd6da;
   --accent: #2e6a6d;
-  --amber: #96590b;
-  --amber-bg: #f6eddd;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --slab: "Zilla Slab", Georgia, "Times New Roman", serif;
@@ -209,8 +207,7 @@ section { padding: clamp(3rem, 7vw, 4.5rem) 0; border-bottom: 1px solid var(--li
 
 .entry {
   display: grid;
-  grid-template-areas: "time status" "body body";
-  grid-template-columns: 1fr auto;
+  grid-template-areas: "time" "body";
   gap: 0.6rem 1.5rem;
   padding: 1.5rem 0;
   border-top: 1px solid var(--line);
@@ -219,7 +216,6 @@ section { padding: clamp(3rem, 7vw, 4.5rem) 0; border-bottom: 1px solid var(--li
 
 .entry__time { grid-area: time; font-size: 0.85rem; color: var(--accent); padding-top: 0.15rem; }
 .entry__body { grid-area: body; }
-.entry__status { grid-area: status; }
 
 .entry h3 { font-size: 1.2rem; }
 .entry__org {
@@ -229,17 +225,6 @@ section { padding: clamp(3rem, 7vw, 4.5rem) 0; border-bottom: 1px solid var(--li
   padding-top: 0.3rem;
 }
 .entry__body p { color: #63313d; padding-top: 0.6rem; max-width: 62ch; }
-
-.badge {
-  display: inline-block;
-  font: 500 0.68rem/1 var(--mono);
-  letter-spacing: 0.12em;
-  color: var(--amber);
-  background: var(--amber-bg);
-  border: 1px solid #e3d3b8;
-  padding: 0.4rem 0.55rem;
-  white-space: nowrap;
-}
 
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; padding-top: 0.85rem; }
 .tags li {
@@ -272,6 +257,18 @@ section { padding: clamp(3rem, 7vw, 4.5rem) 0; border-bottom: 1px solid var(--li
 .exhibit:hover h3 a { color: var(--accent); text-decoration: underline; }
 .exhibit:has(a:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
 .exhibit h3 a:focus-visible { outline: none; }
+/* Skjermbildet går helt ut i kortkanten — negativ margin opphever kortets padding. */
+.exhibit__shot {
+  display: block;
+  width: calc(100% + 3rem);
+  margin: -1.5rem -1.5rem 1.25rem;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
 .exhibit__id {
   display: flex;
   align-items: center;
@@ -361,8 +358,8 @@ footer {
 
 @media (min-width: 46rem) {
   .entry {
-    grid-template-areas: "time body status";
-    grid-template-columns: 9.5rem minmax(0, 1fr) auto;
+    grid-template-areas: "time body";
+    grid-template-columns: 9.5rem minmax(0, 1fr);
     align-items: start;
     padding: 1.75rem 0;
   }
@@ -381,7 +378,7 @@ footer {
   body { background: #fff; color: #000; font-size: 10pt; }
   .skip, .rail, .filters, .sec-note { display: none; }
   body { padding-left: 0; }
-  .exhibit, .badge, .tags li { background: none; }
+  .exhibit, .tags li { background: none; }
   .portrait { width: 8rem; }
   section, .entry { break-inside: avoid; }
 }
